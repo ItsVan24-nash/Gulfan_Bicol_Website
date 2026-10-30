@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Bicol Region</title>
+    <link rel="icon" href="Assets/Icons/favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- ================= NAVIGATION ================= -->
+    <header class="site-header">
+        <nav class="navbar">
+            <a href="index.html" class="logo">Bicol</a>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Toggle menu">
+            <label for="nav-toggle" class="nav-burger"><span></span><span></span><span></span></label>
+            <ul class="nav-links">
+                    <li><a href="index.html" aria-current="page">Home</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="activities.html">Activities</a></li>
+                    <li><a href="history.html">History &amp; Culture</a></li>
+                    <li><a href="plan-trip.html">Plan Your Trip</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ================= HERO ================= -->
+    <section class="hero">
+        <!-- Background video of Mayon Volcano (poster image shows if the video is missing) -->
+        <video class="hero-video" autoplay muted loop playsinline preload="auto">
+  <source src="Assets/Videos/Mayon.mp4" type="video/mp4">
+</video>
+            
+        </video>
+        <div class="mist mist-one"></div>
+        <div class="mist mist-two"></div>
+        <span class="ember"></span>
+        <span class="ember"></span>
+        <span class="ember"></span>
+        <span class="ember"></span>
+        <span class="ember"></span>
+        <span class="ember"></span>
+        <div class="hero-content">
+            <span class="hero-tag">Region V &bull; Philippines</span>
+            <h1>Discover <span>Bicol</span></h1>
+            <p>Where fiery mountains meet emerald forests and endless seas. Welcome to the land of Mayon Volcano.</p>
+            <a href="destinations.html" class="button">Explore Destinations</a>
+            <div class="hero-chips">
+                <a href="destinations.html#albay">&#127755; Mayon</a>
+                <a href="destinations.html#sorsogon">&#128779; Whale Sharks</a>
+                <a href="activities.html#food">&#127798; Bicol Express</a>
+                <a href="history.html#festivals">&#127917; Festivals</a>
+                <a href="plan-trip.html">&#129517; Plan a Trip</a>
+            </div>
+        </div>
+        <div class="scroll-hint" aria-hidden="true"></div>
+        <div class="ridge ridge-back"></div>
+        <div class="ridge"></div>
+    </section>
+
+    <main>
+        <!-- ================= INTRODUCTION ================= -->
+        <section class="section">
+            <div class="intro-split">
+                <div class="intro-text reveal-left">
+                    <span class="eyebrow">Welcome</span>
+                    <h2 class="section-title">The Heart of Southern Luzon</h2>
+                    <p>The Bicol Region, also called Region V, sits at the southeastern tip of Luzon. It is made up of six provinces: Albay, Camarines Norte, Camarines Sur, Catanduanes, Masbate, and Sorsogon.</p>
+                    <p>It is best known for Mayon Volcano, its beautiful cone shape rising above rice fields and coconut groves. But Bicol is more than one mountain. It has forests to hike, waves to surf, islands to hop, and spicy coconut dishes you will never forget.</p>
+                    <a href="history.html" class="button">Read Our Story</a>
+                </div>
+                <div class="stats reveal-right">
+                    <div class="stat"><div class="stat-number">6</div>Provinces</div>
+                    <div class="stat"><div class="stat-number">14</div>Top Spots</div>
+                    <div class="stat"><div class="stat-number">5</div>Festivals</div>
+                    <div class="stat"><div class="stat-number">3</div>Day Plan</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= PROVINCES ================= -->
+        <section class="band">
+            <div class="section">
+                <span class="eyebrow">Six Provinces</span>
+                <h2 class="section-title">Everything Under Bicol</h2>
+                <div class="province-grid">
+                <a href="destinations.html#albay" class="province-card reveal">
+                    <h3>Albay</h3>
+                    <span class="capital">Capital: Legazpi City</span>
+                    <p>Home of the perfect-coned Mayon Volcano.</p>
+                </a>
+                <a href="destinations.html#camnorte" class="province-card reveal">
+                    <h3>Camarines Norte</h3>
+                    <span class="capital">Capital: Daet</span>
+                    <p>Gold-sand islands, surf breaks, and quiet coves.</p>
+                </a>
+                <a href="destinations.html#camsur" class="province-card reveal">
+                    <h3>Camarines Sur</h3>
+                    <span class="capital">Capital: Pili</span>
+                    <p>Adventure capital: karst islands, forests, wakeboarding.</p>
+                </a>
+                <a href="destinations.html#catanduanes" class="province-card reveal">
+                    <h3>Catanduanes</h3>
+                    <span class="capital">Capital: Virac</span>
+                    <p>The windswept island where the Pacific meets the cliffs.</p>
+                </a>
+                <a href="destinations.html#masbate" class="province-card reveal">
+                    <h3>Masbate</h3>
+                    <span class="capital">Capital: Masbate City</span>
+                    <p>Cowboy country with marine sanctuaries and rodeos.</p>
+                </a>
+                <a href="destinations.html#sorsogon" class="province-card reveal">
+                    <h3>Sorsogon</h3>
+                    <span class="capital">Capital: Sorsogon City</span>
+                    <p>Whale sharks, crater lakes, and the gateway to the Visayas.</p>
+                </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= GALLERY ================= -->
+        <section class="section">
+            <span class="eyebrow">Gallery</span>
+            <h2 class="section-title">Postcards From Bicol</h2>
+            <div class="gallery">
+                <figure class="reveal"><img src="Assets/Images/Mayon Volcano.jpg" alt="Mayon Volcano" loading="lazy"><figcaption>Mayon Volcano</figcaption></figure>
+                <figure class="reveal"><img src="Assets/Images/Calaguas Island.jpg" alt="Calaguas Islands" loading="lazy"><figcaption>Calaguas Islands</figcaption></figure>
+                <figure class="reveal"><img src="Assets/Images/cagsawa-ruins park.jpg" alt="Cagsawa Ruins" loading="lazy"><figcaption>Cagsawa Ruins</figcaption></figure>
+                <figure class="reveal"><img src="Assets/Images/mount isarog.jpg" alt="Mount Isarog" loading="lazy"><figcaption>Mount Isarog</figcaption></figure>
+                <figure class="reveal"><img src="Assets/Images/Puraran.jpg" alt="Puraran Beach" loading="lazy"><figcaption>Puraran Beach</figcaption></figure>
+                <figure class="reveal"><img src="Assets/Images/Donsol.jpg" alt="Donsol" loading="lazy"><figcaption>Donsol</figcaption></figure>
+            </div>
+        </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div>
+                <h3>Bicol Region</h3>
+                <p>Region V, Philippines. Land of volcanoes, forests, and the sea.</p>
+            </div>
+            <div>
+                <h3>Explore</h3>
+                <p><a href="destinations.html">Destinations</a><br><a href="activities.html">Activities</a><br><a href="history.html">History &amp; Culture</a></p>
+            </div>
+            <div>
+                <h3>Contact</h3>
+                <p>Email: ivan.gulfan@lsu.edu.ph<br>Phone: +63 912 902 3003<br>Legazpi City, Albay</p>
+            </div>
+        </div>
+        <p class="copyright">&copy; 2026 Visit Bicol | Student project for Introduction to Computing</p>
+    </footer>
+</body>
+</html>
