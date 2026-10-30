@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Destinations | Bicol Region</title>
-    <link rel="icon" href="Icons/favicon.svg" type="image/svg+xml">
+    <title>Activities | Bicol Region</title>
+    <link rel="icon" href="Icons/montol.svg" type="image/svg+xml">
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -17,8 +17,8 @@
             <label for="nav-toggle" class="nav-burger"><span></span><span></span><span></span></label>
             <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="destinations.html" aria-current="page">Destinations</a></li>
-                    <li><a href="activities.html">Activities</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="activities.html" aria-current="page">Activities</a></li>
                     <li><a href="history.html">History &amp; Culture</a></li>
                     <li><a href="plan-trip.html">Plan Your Trip</a></li>
             </ul>
@@ -28,161 +28,64 @@
     <!-- ================= PAGE BANNER ================= -->
     <section class="page-hero">
        <video class="hero-video" autoplay muted loop playsinline preload="auto">
-  <source src="Videos/popular.mp4" type="video/mp4">
+  <source src="Videos/activities.mp4" type="video/mp4">
 </video>
         <div style="position:relative;z-index:2;">
-            <h1>Popular Destinations</h1>
-            <p>From volcano slopes to hidden island coves, across all six provinces.</p>
+            <h1>Activities &amp; Experiences</h1>
+            <p>Fire, forest, and flavor. Pick your kind of adventure.</p>
         </div>
     </section>
 
     <main class="section">
-        <!-- ================= DESTINATION BOARD (filter by province using :target) ================= -->
-        <div class="dest-board">
-            <div class="chip-row">
-                <a href="#all" class="chip">All Bicol</a>
-                <a href="#albay" class="chip">Albay</a>
-                <a href="#camnorte" class="chip">Camarines Norte</a>
-                <a href="#camsur" class="chip">Camarines Sur</a>
-                <a href="#catanduanes" class="chip">Catanduanes</a>
-                <a href="#masbate" class="chip">Masbate</a>
-                <a href="#sorsogon" class="chip">Sorsogon</a>
-            </div>
-            <span id="all" class="filter-anchor"></span>
-            <span id="albay" class="filter-anchor"></span>
-            <span id="camnorte" class="filter-anchor"></span>
-            <span id="camsur" class="filter-anchor"></span>
-            <span id="catanduanes" class="filter-anchor"></span>
-            <span id="masbate" class="filter-anchor"></span>
-            <span id="sorsogon" class="filter-anchor"></span>
-            <div class="dest-grid">
-                <article class="card albay reveal">
-                    <span class="tag">Volcano</span>
-                    <div class="card-photo"><img src="Images/Mayon Volcano.jpg" alt="Mayon Volcano" width="900" height="600" loading="lazy"></div>
-                    <div class="card-body">
-                        <h3>Mayon Volcano</h3>
-                        <span class="card-location">Legazpi City &amp; Daraga, Albay</span>
-                        <p>Famous for its almost perfect cone, Mayon is the most active volcano in the Philippines. It looks best at sunrise from Cagsawa or Lignon Hill. Always follow PHIVOLCS advisories since the danger zone is restricted.</p>
-                    </div>
-                </article>
-                <article class="card albay reveal">
-                    <span class="tag">Heritage</span>
-                    <div class="card-photo"><img src="Images/cagsawa-ruins park.jpg" alt="Cagsawa Ruins" width="900" height="600" loading="lazy"></div>
-                    <div class="card-body">
-                        <h3>Cagsawa Ruins</h3>
-                        <span class="card-location">Daraga, Albay</span>
-                        <p>The lone bell tower of Cagsawa stands as a reminder of the 1814 eruption. Its stones frame Mayon in one of the most photographed views in the country. The park is open all day with local snacks nearby.</p>
-                    </div>
-                </article>
-                <article class="card albay reveal">
-                    <span class="tag">Viewpoint</span>
-                    <div class="card-photo"><img src="Images/lighon hill.webp" alt="Lignon Hill Nature Park" width="900" height="600" loading="lazy"></div>
-                    <div class="card-body">
-                        <h3>Lignon Hill Nature Park</h3>
-                        <span class="card-location">Legazpi City, Albay</span>
-                        <p>A hilltop park with a wide view of Mayon, the city, and Albay Gulf. Visitors can walk the trails or ride the zipline. Go early in the morning when the clouds are thin.</p>
-                    </div>
-                </article>
-                <article class="card camnorte reveal">
-                    <span class="tag">Beach</span>
-                    <div class="card-photo"><img src="Images/Calaguas Island.jpg" alt="Calaguas Islands" width="900" height="600" loading="lazy"></div>
-                    <div class="card-body">
-                        <h3>Calaguas Islands</h3>
-                        <span class="card-location">Vinzons, Camarines Norte</span>
-                        <p>Calaguas is known for Mahabang Buhangin, a long stretch of powdery white sand and clear water. The islands are best enjoyed with camping and island hopping. Pack light since facilities are basic.</p>
-                    </div>
-                </article>
-                <article class="card camnorte reveal">
-                    <span class="tag">Beach</span>
-                    <div class="card-photo"><img src="Images/Bagasbas.jpg" alt="Bagasbas Beach" width="900" height="600" loading="lazy"></div>
-                    <div class="card-body">
-                        <h3>Bagasbas Beach</h3>
-                        <span class="card-location">Daet, Camarines Norte</span>
-                        <p>A long gray-sand beach popular with surfers and sunset watchers. Beginners can take lessons while locals grill fresh seafood nearby. It is close to Daet town center.</p>
-                    </div>
-                </article>
-                <article class="card camsur reveal">
-                    <span class="tag">Island</span>
-                    <div class="card-photo"><img src="Images/Caramoan.jpg" alt="Caramoan Peninsula" width="900" height="600" loading="lazy"></div>
-                    <div class="card-body">
-                        <h3>Caramoan Peninsula</h3>
-                        <span class="card-location">Caramoan, Camarines Sur</span>
-                        <p>Limestone cliffs, hidden lagoons, and white-sand coves make Caramoan a favorite for island hopping. The area has hosted international reality shows. Boat rides start from the town port.</p>
-                    </div>
-                </article>
-                <article class="card camsur reveal">
-                    <span class="tag">Adventure</span>
-                    <div class="card-photo"><img src="Images/Camsur Watersports.jpg" alt="Camsur Watersports Complex" width="900" height="600" loading="lazy"></div>
-                    <div class="card-body">
-                        <h3>Camsur Watersports Complex</h3>
-                        <span class="card-location">Pili, Camarines Sur</span>
-                        <p>CWC is the home of cable wakeboarding in the country. Both beginners and pros can ride on the lake with Mayon-like views in the distance on clear days. It also has pools and a viewing deck.</p>
-                    </div>
-                </article>
-                <article class="card camsur reveal">
-                    <span class="tag">Forest</span>
-                    <div class="card-photo"><img src="Images/mount isarog.jpg" alt="Mount Isarog Natural Park" width="900" height="600" loading="lazy"></div>
-                    <div class="card-body">
-                        <h3>Mount Isarog Natural Park</h3>
-                        <span class="card-location">Naga City &amp; nearby towns, Camarines Sur</span>
-                        <p>A forested mountain with trails, waterfalls, and rich wildlife. It is a good place for hikers who want cool air and green scenery. Hire a local guide for longer treks.</p>
-                    </div>
-                </article>
-                <article class="card catanduanes reveal">
-                    <span class="tag">Surf</span>
-                    <div class="card-photo"><img src="Images/puraran beach.jpg" alt="Puraran Beach" width="900" height="600" loading="lazy"></div>
-                    <div class="card-body">
-                        <h3>Puraran Beach</h3>
-                        <span class="card-location">Baras, Catanduanes</span>
-                        <p>Puraran is a surfing destination known for its tube waves called the Majestic. Even non-surfers enjoy the wide Pacific view. The surf season is usually from September to March.</p>
-                    </div>
-                </article>
-                <article class="card catanduanes reveal">
-                    <span class="tag">Viewpoint</span>
-                    <div class="card-photo"><img src="Images/binurog.jpg" alt="Binurong Point" width="900" height="600" loading="lazy"></div>
-                    <div class="card-body">
-                        <h3>Binurong Point</h3>
-                        <span class="card-location">Baras, Catanduanes</span>
-                        <p>Rolling green hills end in cliffs above the Pacific Ocean. A short trail leads to wide lookouts perfect for sunrise. Wear sturdy shoes because the paths can be slippery.</p>
-                    </div>
-                </article>
-                <article class="card masbate reveal">
-                    <span class="tag">Island</span>
-                    <div class="card-photo"><img src="Images/ticao.jpg" alt="Ticao Island" width="900" height="600" loading="lazy"></div>
-                    <div class="card-body">
-                        <h3>Ticao Island</h3>
-                        <span class="card-location">Ticao Island, Masbate</span>
-                        <p>Ticao is a quiet island known for marine life, including manta rays in some seasons. Its slow pace and clear waters suit divers and snorkelers. Ask local operators for the best time to visit.</p>
-                    </div>
-                </article>
-                <article class="card sorsogon reveal">
-                    <span class="tag">Wildlife</span>
-                    <div class="card-photo"><img src="Images/donsol shark.jpg" alt="Donsol Whale Sharks" width="900" height="600" loading="lazy"></div>
-                    <div class="card-body">
-                        <h3>Donsol Whale Sharks</h3>
-                        <span class="card-location">Donsol, Sorsogon</span>
-                        <p>Donsol is known for butanding (whale shark) interactions in a regulated setting. Evenings offer a firefly watching tour along the river. Book with accredited operators.</p>
-                    </div>
-                </article>
-                <article class="card sorsogon reveal">
-                    <span class="tag">Forest</span>
-                    <div class="card-photo"><img src="Images/bulusan.jpg" alt="Bulusan Volcano Natural Park" width="900" height="600" loading="lazy"></div>
-                    <div class="card-body">
-                        <h3>Bulusan Volcano Natural Park</h3>
-                        <span class="card-location">Bulusan, Sorsogon</span>
-                        <p>A green park around Bulusan Volcano with a calm crater lake for kayaking and picnics. The area is rich in forest and birdlife. Check for volcano advisories before visiting.</p>
-                    </div>
-                </article>
-                <article class="card sorsogon reveal">
-                    <span class="tag">Beach</span>
-                    <div class="card-photo"><img src="Images/subic.jpg" alt="Subic Beach" width="900" height="600" loading="lazy"></div>
-                    <div class="card-body">
-                        <h3>Subic Beach</h3>
-                        <span class="card-location">Matnog, Sorsogon</span>
-                        <p>A scenic beach with rock formations and clear water, located near the ferry port to Samar. It is a handy stop for travelers moving between islands. Visit on weekdays for fewer crowds.</p>
-                    </div>
-                </article>
-            </div>
+        <div class="activity-grid">
+            <section id="adventure" class="activity-card reveal">
+                <img src="Icons/mountain.svg" alt="Adventure icon" class="activity-icon" width="54" height="54">
+                <h2>Adventure</h2>
+                <p>Hike and climb, wheel and wave</p>
+                <ul class="activity-list">
+                    <li>Hike the trails of Mount Isarog</li>
+                    <li>Ride an ATV around Mayon&rsquo;s lava trails</li>
+                    <li>Try cable wakeboarding at CWC</li>
+                    <li>Surf the waves of Puraran and Bagasbas</li>
+                    <li>Zipline at Lignon Hill</li>
+                </ul>
+            </section>
+            <section id="nature" class="activity-card reveal">
+                <img src="Icons/wave.svg" alt="Island &amp; Nature icon" class="activity-icon" width="54" height="54">
+                <h2>Island &amp; Nature</h2>
+                <p>Sea, sand, and starlit rivers</p>
+                <ul class="activity-list">
+                    <li>Island hop in Caramoan and Calaguas</li>
+                    <li>Swim with whale sharks in Donsol (with accredited operators)</li>
+                    <li>Watch fireflies glow along the Donsol River</li>
+                    <li>Kayak on the Bulusan Lake</li>
+                    <li>Snorkel with marine life around Ticao</li>
+                </ul>
+            </section>
+            <section id="food" class="activity-card reveal">
+                <img src="Icons/food.svg" alt="Food &amp; Flavors icon" class="activity-icon" width="54" height="54">
+                <h2>Food &amp; Flavors</h2>
+                <p>The spicy side of Luzon</p>
+                <ul class="activity-list">
+                    <li>Taste Bicol Express, pork in chili and coconut milk</li>
+                    <li>Try laing, taro leaves in creamy coconut milk</li>
+                    <li>Eat pinangat wrapped in gabi leaves</li>
+                    <li>Slurp kinalas noodles in Naga City</li>
+                    <li>Snack on pili nut sweets and sili ice cream</li>
+                </ul>
+            </section>
+            <section id="culture" class="activity-card reveal">
+                <img src="Icons/culture.svg" alt="Culture &amp; Heritage icon" class="activity-icon" width="54" height="54">
+                <h2>Culture &amp; Heritage</h2>
+                <p>Faith, festivals, and old stones</p>
+                <ul class="activity-list">
+                    <li>Visit the Cagsawa bell tower</li>
+                    <li>Join the Peñafrancia devotion in Naga City</li>
+                    <li>Explore old churches in Daraga and Camalig</li>
+                    <li>Shop for abaca crafts in Catanduanes</li>
+                    <li>Watch a rodeo in Masbate</li>
+                </ul>
+            </section>
         </div>
     </main>
 
